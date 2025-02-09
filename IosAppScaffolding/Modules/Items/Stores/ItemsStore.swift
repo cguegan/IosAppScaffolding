@@ -35,11 +35,16 @@ final class ItemsStore {
     }
     
     /// Enable live sync with Firestore
-    /// - Note: This method will listen to Firestore changes and update the items array
+    /// - Note: This method will listen to Firestore changes and update of the items
+    ///         array for the current user only.
+    ///
     func enableLiveSync() {
         
         print("DEBUG: Enabling document live sync ...")
+        print("DEBUG: Current user ID: \(AuthService.shared.userSession?.uid ?? "No User ID")")
+        
         listener = db.collection(collectionName)
+            .whereField("user_id", isEqualTo: AuthService.shared.userSession?.uid ?? "")
             .addSnapshotListener { querySnapshot, error in
                 if let querySnapshot = querySnapshot {
                     self.items = querySnapshot.documents.compactMap { document in
@@ -85,6 +90,11 @@ final class ItemsStore {
         
         /// Check if document has an ID
         guard let id = item.id else { return }
+        
+        /// Set updated date
+        /// - Note: This is important to keep track of the last update date
+        var item = item
+        item.updatedAt = Date()
         
         /// Update the document
         do {

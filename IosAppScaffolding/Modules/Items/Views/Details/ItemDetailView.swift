@@ -23,12 +23,10 @@ struct ItemDetailView: View {
                 .listRowSeparator(.hidden)
                        
             Section(header: Text("Details")) {
-                Text("**Created at:** \(item.createdAt.description)")
-                    .font(.caption)
-                
-                Text("**Updated at:** \(item.updatedAt.description)")
-                    .font(.caption)
-                    .listRowSeparator(.hidden)
+                VStack(alignment: .leading, spacing: 8) {
+                    Text("**Created:** \(item.createdAt.timeAgoDisplay())")
+                    Text("**Updated:** \(item.updatedAt.timeAgoDisplay())")
+                }
             }
         }
         .toolbar {
