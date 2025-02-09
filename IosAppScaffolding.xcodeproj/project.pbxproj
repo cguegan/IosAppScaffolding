@@ -10,7 +10,6 @@
 		EF7E94A62D58ABE000A52F3E /* ItemForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7E94A52D58ABE000A52F3E /* ItemForm.swift */; };
 		EF7E94A82D58C67400A52F3E /* IphoneTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7E94A72D58C67400A52F3E /* IphoneTabView.swift */; };
 		EF7E94AC2D58D4EF00A52F3E /* IpadTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7E94AB2D58D4EF00A52F3E /* IpadTabView.swift */; };
-		EF7E94AE2D58F72700A52F3E /* .gitIgnore 2 in Resources */ = {isa = PBXBuildFile; fileRef = EF7E94AD2D58F72700A52F3E /* .gitIgnore 2 */; };
 		EFBC76F22D4CC2AA0031ED41 /* ItemListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBC76F12D4CC2AA0031ED41 /* ItemListRow.swift */; };
 		EFD262EE2D4BDF5A00767E5D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFD262E72D4BDF5A00767E5D /* Preview Assets.xcassets */; };
 		EFD262EF2D4BDF5A00767E5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFD262E92D4BDF5A00767E5D /* Assets.xcassets */; };
@@ -49,7 +48,6 @@
 		EF7E94A52D58ABE000A52F3E /* ItemForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemForm.swift; sourceTree = "<group>"; };
 		EF7E94A72D58C67400A52F3E /* IphoneTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IphoneTabView.swift; sourceTree = "<group>"; };
 		EF7E94AB2D58D4EF00A52F3E /* IpadTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpadTabView.swift; sourceTree = "<group>"; };
-		EF7E94AD2D58F72700A52F3E /* .gitIgnore 2 */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".gitIgnore 2"; sourceTree = "<group>"; };
 		EFBC76F12D4CC2AA0031ED41 /* ItemListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListRow.swift; sourceTree = "<group>"; };
 		EFD262D52D4BDF2200767E5D /* IosAppScaffolding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IosAppScaffolding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFD262E72D4BDF5A00767E5D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -130,7 +128,6 @@
 				EFD2631E2D4BE42000767E5D /* README.md */,
 				EFD262ED2D4BDF5A00767E5D /* IosAppScaffolding */,
 				EFD262D62D4BDF2200767E5D /* Products */,
-				EF7E94AD2D58F72700A52F3E /* .gitIgnore 2 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -373,7 +370,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF7E94AE2D58F72700A52F3E /* .gitIgnore 2 in Resources */,
 				EFD2631F2D4BE42000767E5D /* README.md in Resources */,
 				EFD263362D4BF7C200767E5D /* GoogleService-Info.plist in Resources */,
 				EFD262EE2D4BDF5A00767E5D /* Preview Assets.xcassets in Resources */,
