@@ -10,6 +10,10 @@
 		EF7E94A62D58ABE000A52F3E /* ItemForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7E94A52D58ABE000A52F3E /* ItemForm.swift */; };
 		EF7E94A82D58C67400A52F3E /* IphoneTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7E94A72D58C67400A52F3E /* IphoneTabView.swift */; };
 		EF7E94AC2D58D4EF00A52F3E /* IpadTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7E94AB2D58D4EF00A52F3E /* IpadTabView.swift */; };
+		EF7E94B22D59028100A52F3E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF7E94B12D59028100A52F3E /* GoogleService-Info.plist */; };
+		EF7E94B42D591A9A00A52F3E /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7E94B32D591A9A00A52F3E /* StorageManager.swift */; };
+		EF7E94B62D591DD900A52F3E /* Image+FittedToHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7E94B52D591DD900A52F3E /* Image+FittedToHeight.swift */; };
+		EF7E94B82D59738800A52F3E /* ItemEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7E94B72D59738800A52F3E /* ItemEditView.swift */; };
 		EFBC76F22D4CC2AA0031ED41 /* ItemListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBC76F12D4CC2AA0031ED41 /* ItemListRow.swift */; };
 		EFD262EE2D4BDF5A00767E5D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFD262E72D4BDF5A00767E5D /* Preview Assets.xcassets */; };
 		EFD262EF2D4BDF5A00767E5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFD262E92D4BDF5A00767E5D /* Assets.xcassets */; };
@@ -38,7 +42,6 @@
 		EFD263312D4BED9B00767E5D /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD2632E2D4BED9B00767E5D /* RegistrationView.swift */; };
 		EFD263322D4BED9B00767E5D /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD2632F2D4BED9B00767E5D /* ResetPasswordView.swift */; };
 		EFD263342D4BEFBB00767E5D /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD263332D4BEFBB00767E5D /* LoginManager.swift */; };
-		EFD263362D4BF7C200767E5D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EFD263352D4BF7C200767E5D /* GoogleService-Info.plist */; };
 		EFD2633D2D4C21C700767E5D /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD2633C2D4C21C700767E5D /* AppConstants.swift */; };
 		EFD263412D4C2C7600767E5D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD263402D4C2C7600767E5D /* ProfileView.swift */; };
 		EFD263432D4C2F6D00767E5D /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD263422D4C2F6D00767E5D /* SettingsRowView.swift */; };
@@ -48,6 +51,10 @@
 		EF7E94A52D58ABE000A52F3E /* ItemForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemForm.swift; sourceTree = "<group>"; };
 		EF7E94A72D58C67400A52F3E /* IphoneTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IphoneTabView.swift; sourceTree = "<group>"; };
 		EF7E94AB2D58D4EF00A52F3E /* IpadTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpadTabView.swift; sourceTree = "<group>"; };
+		EF7E94B12D59028100A52F3E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EF7E94B32D591A9A00A52F3E /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		EF7E94B52D591DD900A52F3E /* Image+FittedToHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+FittedToHeight.swift"; sourceTree = "<group>"; };
+		EF7E94B72D59738800A52F3E /* ItemEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemEditView.swift; sourceTree = "<group>"; };
 		EFBC76F12D4CC2AA0031ED41 /* ItemListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListRow.swift; sourceTree = "<group>"; };
 		EFD262D52D4BDF2200767E5D /* IosAppScaffolding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IosAppScaffolding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFD262E72D4BDF5A00767E5D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -74,7 +81,6 @@
 		EFD2632E2D4BED9B00767E5D /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		EFD2632F2D4BED9B00767E5D /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
 		EFD263332D4BEFBB00767E5D /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
-		EFD263352D4BF7C200767E5D /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EFD2633C2D4C21C700767E5D /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		EFD263402D4C2C7600767E5D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		EFD263422D4C2F6D00767E5D /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
@@ -108,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				EFD262FF2D4BE0A100767E5D /* ItemDetailView.swift */,
+				EF7E94B72D59738800A52F3E /* ItemEditView.swift */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -179,6 +186,7 @@
 			children = (
 				EFD2630A2D4BE1FB00767E5D /* Item.swift */,
 				EFD2630B2D4BE1FB00767E5D /* User.swift */,
+				EF7E94B32D591A9A00A52F3E /* StorageManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -187,7 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				EFD262EC2D4BDF5A00767E5D /* IosAppScaffoldingApp.swift */,
-				EFD263352D4BF7C200767E5D /* GoogleService-Info.plist */,
+				EF7E94B12D59028100A52F3E /* GoogleService-Info.plist */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -235,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				EFD263242D4BECDE00767E5D /* Date+Ago.swift */,
+				EF7E94B52D591DD900A52F3E /* Image+FittedToHeight.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -371,7 +380,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFD2631F2D4BE42000767E5D /* README.md in Resources */,
-				EFD263362D4BF7C200767E5D /* GoogleService-Info.plist in Resources */,
+				EF7E94B22D59028100A52F3E /* GoogleService-Info.plist in Resources */,
 				EFD262EE2D4BDF5A00767E5D /* Preview Assets.xcassets in Resources */,
 				EFD262EF2D4BDF5A00767E5D /* Assets.xcassets in Resources */,
 			);
@@ -387,10 +396,12 @@
 				EFD263082D4BE0ED00767E5D /* SplashScreen.swift in Sources */,
 				EFD263002D4BE0A100767E5D /* ItemDetailView.swift in Sources */,
 				EF7E94A82D58C67400A52F3E /* IphoneTabView.swift in Sources */,
+				EF7E94B42D591A9A00A52F3E /* StorageManager.swift in Sources */,
 				EFD262F02D4BDF5A00767E5D /* ContentView.swift in Sources */,
 				EFD263112D4BE23D00767E5D /* String+isValidEmail.swift in Sources */,
 				EF7E94A62D58ABE000A52F3E /* ItemForm.swift in Sources */,
 				EFD262FE2D4BE08900767E5D /* ItemAddSheet.swift in Sources */,
+				EF7E94B62D591DD900A52F3E /* Image+FittedToHeight.swift in Sources */,
 				EFD262F12D4BDF5A00767E5D /* IosAppScaffoldingApp.swift in Sources */,
 				EFD263412D4C2C7600767E5D /* ProfileView.swift in Sources */,
 				EFBC76F22D4CC2AA0031ED41 /* ItemListRow.swift in Sources */,
@@ -399,6 +410,7 @@
 				EFD263312D4BED9B00767E5D /* RegistrationView.swift in Sources */,
 				EFD263322D4BED9B00767E5D /* ResetPasswordView.swift in Sources */,
 				EFD2630C2D4BE1FB00767E5D /* Item.swift in Sources */,
+				EF7E94B82D59738800A52F3E /* ItemEditView.swift in Sources */,
 				EFD263342D4BEFBB00767E5D /* LoginManager.swift in Sources */,
 				EFD2630D2D4BE1FB00767E5D /* User.swift in Sources */,
 				EFD262FA2D4BE06200767E5D /* ItemsStore.swift in Sources */,
