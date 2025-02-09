@@ -8,10 +8,16 @@
 import SwiftUI
 
 struct SplashScreen: View {
+    
+    /// Main View
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Splash Screen")
     }
 }
+
+
+// MARK: - Preview
+// ———————————————
 
 #Preview {
     SplashScreen()

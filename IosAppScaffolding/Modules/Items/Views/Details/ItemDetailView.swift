@@ -53,5 +53,6 @@ struct ItemDetailView: View {
 #Preview {
     NavigationStack {
         ItemDetailView(item: .constant(Item.samples[0]))
+            .environment(ItemsStore())
     }
 }

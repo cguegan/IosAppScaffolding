@@ -49,4 +49,5 @@ struct ItemsListView: View {
 
 #Preview {
     ItemsListView()
+        .environment(ItemsStore())
 }

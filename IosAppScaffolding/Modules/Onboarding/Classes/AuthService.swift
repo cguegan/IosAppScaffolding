@@ -29,7 +29,7 @@ final class AuthService {
     /// Private init
     /// Not Accessible from outstide because of the singleton pattern used here
     ///
-    init() {
+    private init() {
         userSession = Auth.auth().currentUser
         if userSession != nil {
             Task {

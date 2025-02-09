@@ -10,14 +10,20 @@ import FirebaseAuth
 
 struct ContentView: View {
     
-    @State private var authService = AuthService()
-        
     // MARK: - Main View
     // —————————————————
     var body: some View {
         Group {
             if AuthService.shared.userSession != nil {
-                IphoneTabView()
+                /// swich to view depending on the user device
+                switch UIDevice.current.userInterfaceIdiom {
+                    case .phone:
+                        IphoneTabView()
+                    case .pad:
+                        IpadTabView()
+                    default:
+                    IphoneTabView()
+                }
             } else {
                 LoginView()
             }

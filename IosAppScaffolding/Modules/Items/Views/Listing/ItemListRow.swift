@@ -47,4 +47,5 @@ struct ItemListRow: View {
 
 #Preview {
     ItemListRow(item: Item.samples[0])
+        .environment(ItemsStore())
 }

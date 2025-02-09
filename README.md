@@ -17,9 +17,13 @@ MVP
 - [ ] Forgot Password
 - [ ] Change Password
 - [ ] Delete account
+    - [ ] Add confirmation alert
+    - [ ] Delete items from firebase
+    - [ ] Delete user from firebase
+    - [ ] Delete account from firebase
 - [ ] Validate email
 - [ ] Upload/Load user picture
-- [ ] Fake Items flow
 - [x] Get only items for the current user
 - [ ] Display error messages
-- [ ] Add .gitignore
+- [ ] Add images to the storage
+- [x] Add .gitignore

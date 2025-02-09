@@ -22,6 +22,11 @@ struct IphoneTabView: View {
     }
 }
 
+
+// MARK: - Preview
+// ———————————————
+
 #Preview {
     IphoneTabView()
+        .environment(ItemsStore())
 }

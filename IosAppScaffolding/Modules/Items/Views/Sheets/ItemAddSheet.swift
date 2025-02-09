@@ -42,4 +42,5 @@ struct ItemAddSheet: View {
 
 #Preview {
     ItemAddSheet()
+        .environment(ItemsStore())
 }

@@ -43,4 +43,5 @@ struct ItemEditSheet: View {
 
 #Preview {
     ItemEditSheet(item: .constant(Item.samples[0]))
+        .environment(ItemsStore())
 }
