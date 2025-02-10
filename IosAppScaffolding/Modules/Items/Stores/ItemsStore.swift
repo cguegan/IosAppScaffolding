@@ -49,8 +49,7 @@ final class ItemsStore {
     ///
     func enableLiveSync() {
         
-        print("DEBUG: Enabling document live sync ...")
-        print("DEBUG: Current user ID: \(AuthService.shared.userSession?.uid ?? "No User ID")")
+        print("[ DEBUG ] Enabling document live sync ...")
         
         listener = db.collection(collectionName)
             .whereField("user_id", isEqualTo: AuthService.shared.userSession?.uid ?? "")
@@ -75,7 +74,7 @@ final class ItemsStore {
         do {
             try db.collection(collectionName).addDocument(from: item)
         } catch {
-            print("DEBUG: Failed to add document with error: \(error.localizedDescription)")
+            print("[ ERROR ] Failed to add document with error: \(error.localizedDescription)")
             self.error = error
             self.errorMessage = error.localizedDescription
         }
@@ -90,6 +89,7 @@ final class ItemsStore {
         /// Check if document has an ID
         guard let id = item.id else { return }
         
+        /// Delete the document
         db.collection(collectionName).document(id).delete()
         
     }
@@ -112,7 +112,7 @@ final class ItemsStore {
         do {
             try db.collection(collectionName).document(id).setData(from: item)
         } catch {
-            print("DEBUG: Failed to update document with error: \(error.localizedDescription)")
+            print("[ ERROR ] Failed to update document with error: \(error.localizedDescription)")
             self.error = error
             self.errorMessage = error.localizedDescription
         }
@@ -164,7 +164,7 @@ final class ItemsStore {
         if let data = data {
             storagePath.putData(data, metadata: metadata) { (metadata, error) in
                 if let error = error {
-                    print("[ Error ] While uploading: \(error)")
+                    print("[ ERROR ] Failed to upload image: \(error)")
                 } else {
                     storagePath.downloadURL { (url, error) in
                         if let url = url {
@@ -191,7 +191,7 @@ final class ItemsStore {
         /// Delete the image
         storagePath.delete { error in
             if let error = error {
-                print("[ Error ] While deleting: \(error)")
+                print("[ ERROR ] Failed to delete image: \(error)")
             } else {
                 var item = item
                 item.imageUrl = nil
@@ -199,8 +199,5 @@ final class ItemsStore {
             }
         }
     }
-    
-    
-
     
 }

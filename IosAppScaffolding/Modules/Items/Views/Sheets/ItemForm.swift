@@ -24,14 +24,22 @@ struct ItemForm: View {
     /// Main View
     var body: some View {
         Form {
+            
+            /// Title Section
             Section(header: Text("Title")) {
                 TextField("Title", text: $item.title)
             }
+            
+            /// Description Section
             Section(header: Text("Description")) {
-                TextEditor(text: $item.description, )
+                TextEditor(text: $item.description)
                     .frame(maxHeight: .infinity)
             }
+            
+            /// Image Section
             Section(header: Text("Image")) {
+                
+                /// Image Picker from library
                 HStack(spacing: 12) {
                     Image(systemName: "photo.on.rectangle.angled")
                         .imageScale(.small)
@@ -47,7 +55,26 @@ struct ItemForm: View {
                             }
                         }
                 }
+                
+                // TODO: - Take picture from camera
+                /// Take picture from camera
+                HStack(spacing: 12) {
+                    Image(systemName: "camera")
+                        .imageScale(.small)
+                        .font(.title)
+                        .foregroundStyle(Color.accentColor)
+                        .frame(width: 24)
+                    
+                    PhotosPicker( selection: $selectedImage,
+                                  matching: .images) { Text("Take Photo") }
+                        .onChange(of: selectedImage) { _, selectedImage in
+                            if let selectedImage = selectedImage {
+                                store.uploadImage(selectedImage, for: item)
+                            }
+                        }
+                }
                                 
+                /// Delete Image
                 if let imageUrl = item.imageUrl {
                     HStack(spacing: 12) {
                         Image(systemName: "trash")
@@ -65,6 +92,8 @@ struct ItemForm: View {
                     
                 }
             }
+            
+            /// Picture URL Section (To be deleted)
             Section(header: Text("Picture URL")) {
                 Text(item.imageUrl ?? "")
                     .font(.caption)
@@ -78,4 +107,5 @@ struct ItemForm: View {
 
 #Preview {
     ItemForm(item: .constant(Item.samples[0]))
+        .environment(ItemsStore())
 }
