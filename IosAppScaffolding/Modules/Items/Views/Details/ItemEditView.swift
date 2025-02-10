@@ -21,14 +21,6 @@ struct ItemEditView: View {
         NavigationStack {
             ItemForm(item: $item)
             .navigationBarTitle("Edit Item")
-//            .toolbar {
-//                ToolbarItem(placement: .navigationBarTrailing) {
-//                    Button("Save") {
-//                        store.update(self.item)
-//                        dismiss()
-//                    }
-//                }
-//            }
         }
 
     }

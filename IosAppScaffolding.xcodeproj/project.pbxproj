@@ -11,7 +11,6 @@
 		EF7E94A82D58C67400A52F3E /* IphoneTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7E94A72D58C67400A52F3E /* IphoneTabView.swift */; };
 		EF7E94AC2D58D4EF00A52F3E /* IpadTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7E94AB2D58D4EF00A52F3E /* IpadTabView.swift */; };
 		EF7E94B22D59028100A52F3E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF7E94B12D59028100A52F3E /* GoogleService-Info.plist */; };
-		EF7E94B42D591A9A00A52F3E /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7E94B32D591A9A00A52F3E /* StorageManager.swift */; };
 		EF7E94B62D591DD900A52F3E /* Image+FittedToHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7E94B52D591DD900A52F3E /* Image+FittedToHeight.swift */; };
 		EF7E94B82D59738800A52F3E /* ItemEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7E94B72D59738800A52F3E /* ItemEditView.swift */; };
 		EFBC76F22D4CC2AA0031ED41 /* ItemListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBC76F12D4CC2AA0031ED41 /* ItemListRow.swift */; };
@@ -52,7 +51,6 @@
 		EF7E94A72D58C67400A52F3E /* IphoneTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IphoneTabView.swift; sourceTree = "<group>"; };
 		EF7E94AB2D58D4EF00A52F3E /* IpadTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpadTabView.swift; sourceTree = "<group>"; };
 		EF7E94B12D59028100A52F3E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		EF7E94B32D591A9A00A52F3E /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		EF7E94B52D591DD900A52F3E /* Image+FittedToHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+FittedToHeight.swift"; sourceTree = "<group>"; };
 		EF7E94B72D59738800A52F3E /* ItemEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemEditView.swift; sourceTree = "<group>"; };
 		EFBC76F12D4CC2AA0031ED41 /* ItemListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListRow.swift; sourceTree = "<group>"; };
@@ -186,7 +184,6 @@
 			children = (
 				EFD2630A2D4BE1FB00767E5D /* Item.swift */,
 				EFD2630B2D4BE1FB00767E5D /* User.swift */,
-				EF7E94B32D591A9A00A52F3E /* StorageManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -396,7 +393,6 @@
 				EFD263082D4BE0ED00767E5D /* SplashScreen.swift in Sources */,
 				EFD263002D4BE0A100767E5D /* ItemDetailView.swift in Sources */,
 				EF7E94A82D58C67400A52F3E /* IphoneTabView.swift in Sources */,
-				EF7E94B42D591A9A00A52F3E /* StorageManager.swift in Sources */,
 				EFD262F02D4BDF5A00767E5D /* ContentView.swift in Sources */,
 				EFD263112D4BE23D00767E5D /* String+isValidEmail.swift in Sources */,
 				EF7E94A62D58ABE000A52F3E /* ItemForm.swift in Sources */,

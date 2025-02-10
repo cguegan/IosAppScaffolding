@@ -28,7 +28,7 @@ struct ItemForm: View {
                 TextField("Title", text: $item.title)
             }
             Section(header: Text("Description")) {
-                TextEditor(text: $item.description)
+                TextEditor(text: $item.description, )
                     .frame(maxHeight: .infinity)
             }
             Section(header: Text("Image")) {
